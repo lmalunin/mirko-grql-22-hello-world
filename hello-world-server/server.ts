@@ -17,5 +17,6 @@ const resolvers = {
 }
 
 const server = new ApolloServer({ typeDefs, resolvers });
+// @ts-ignore
 const { url } = await server.listen({ port: 9000 });
 console.log(`Server running at ${url}`);
