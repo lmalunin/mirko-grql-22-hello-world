@@ -1,8 +1,24 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "esModuleInterop": true,
     "lib": [
-      "es2017"
-    ]
-  }
+      "es2020"
+    ],
+    "module": "es2022",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "target": "es2022",
+    "types": [
+      "node"
+    ],
+    "outDir": "dist"
+  },
+  "include": [
+    "hello-world-server/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
